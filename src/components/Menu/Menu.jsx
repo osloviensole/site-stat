@@ -17,7 +17,6 @@ export const Menu = () => {
     setIsLoading,
   } = useZustand()
   const {isAuthenticated, user} = useAuth0()
-
   useEffect(() => {
     (async () => {
       if (!user?.name) {
@@ -37,8 +36,7 @@ export const Menu = () => {
     })()
   }, [user])
 
-  return (
-    <div className='flex items-center justify-between w-screen h-12 bg-black border-0 border-b-2 border-white'>
+  return (<div className='flex items-center justify-between w-screen h-12 bg-black border-0 border-b-2 border-white'>
       <div className='flex h-full gap-2 p-2 pb-0'>
         {menuArr.map((menu, index) =>
           <MenuItem
@@ -53,6 +51,5 @@ export const Menu = () => {
         }
       </div>
       <Profile />
-    </div>
-  )
+    </div>)
 }

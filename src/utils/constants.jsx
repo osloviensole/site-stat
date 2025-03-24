@@ -47,7 +47,7 @@ export const CHARACTER_COL_CNT = 10
 
 /* Dynamic */
 
-export const BACKEND_URL = 'http://127.0.0.1:4000/api/user'
+export const BACKEND_URL = 'http://127.0.0.1:5000/api/user'
 
 export const HTML_ASPECT = BILLBOARD_HTML_SIZE / 400
 
